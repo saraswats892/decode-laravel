@@ -1,0 +1,6 @@
+/* Fix dropdown on hover for desktop */
+@media (min-width: 992px) {
+    .dropdown:hover .dropdown-menu {
+    display: block;
+    }
+}
