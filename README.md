@@ -1,58 +1,207 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# DECODE Knowledge Project – Laravel
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+A Laravel-based website and content management system developed for the DECODE Knowledge Project.
 
-## About Laravel
+## About the Project
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+This project is a Laravel-based implementation of the DECODE Knowledge Project website.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+The application includes a public website and an admin panel for managing project content such as publications, working papers, and advocacy resources.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Features
 
-## Learning Laravel
+- Public website
+- Admin panel for content management
+- Publications management
+- Working Papers management
+- Advocacy in Action management
+- Image upload
+- PDF upload
+- External video links
+- Form validation
+- Pagination
+- MySQL database integration
+- Laravel Eloquent ORM
+- Blade templates
+- Laravel file storage
+- CRUD operations
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Technology Stack
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- PHP
+- Laravel 13
+- MySQL
+- HTML5
+- CSS3
+- JavaScript
+- jQuery
+- Blade Template Engine
+- Git
+- GitHub
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
+## Main Modules
 
-## Agentic Development
+### Publications
 
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
+The admin panel allows users to:
+
+- Add publications
+- Edit publications
+- Delete publications
+- Upload publication images
+- Display publications on the website
+- Paginate publication records
+
+### Working Papers
+
+The admin panel allows users to:
+
+- Add working papers
+- Edit working papers
+- Delete working papers
+- Upload images
+- Upload PDF files
+- Display working papers on the website
+
+### Advocacy in Action
+
+The admin panel allows users to:
+
+- Add advocacy content
+- Edit advocacy content
+- Delete advocacy content
+- Upload images
+- Add external video links or files
+
+## Laravel Concepts Used
+
+This project includes practical implementation of:
+
+- MVC Architecture
+- Routes
+- Controllers
+- Models
+- Migrations
+- Eloquent ORM
+- Blade Templates
+- CRUD Operations
+- Form Validation
+- File Upload
+- Laravel Storage
+- Pagination
+- CSRF Protection
+- Request Handling
+- Database Operations
+
+## Project Structure
+
+Important directories used in this project:
+
+- `app/Models` - Contains Eloquent models
+- `app/Http/Controllers` - Contains application controllers
+- `database/migrations` - Contains database migration files
+- `resources/views` - Contains Blade view files
+- `routes/web.php` - Contains web application routes
+- `public/assets` - Contains website assets
+- `storage/app/public` - Used for uploaded files
+
+## Database
+
+The project uses MySQL as the database.
+
+Main tables include:
+
+- `publications`
+- `working_papers`
+- `advocacy_in_actions`
+
+## Installation
+
+### 1. Clone the repository
 
 ```bash
-composer require laravel/boost --dev
-
-php artisan boost:install
+git clone https://github.com/saraswats892/decode-laravel.git
 ```
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+### 2. Go to the project directory
 
-## Contributing
+```bash
+cd decode-laravel
+```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### 3. Install PHP dependencies
 
-## Code of Conduct
+```bash
+composer install
+```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### 4. Create the environment file
 
-## Security Vulnerabilities
+```bash
+copy .env.example .env
+```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### 5. Generate the application key
+
+```bash
+php artisan key:generate
+```
+
+### 6. Configure the database
+
+Update the database details in the `.env` file.
+
+### 7. Run migrations
+
+```bash
+php artisan migrate
+```
+
+### 8. Create the storage link
+
+```bash
+php artisan storage:link
+```
+
+### 9. Start the Laravel server
+
+```bash
+php artisan serve
+```
+
+Open the application in your browser:
+
+http://127.0.0.1:8000
+
+## Project Purpose
+
+This project demonstrates practical experience in converting an existing PHP-based website into a structured Laravel application.
+
+It demonstrates the use of Laravel MVC architecture, Eloquent ORM, Blade templates, MySQL, CRUD operations, validation, pagination, and file management.
+
+## Author
+
+**Swati Saraswat**
+
+PHP / Laravel Developer
+
+### Skills
+
+- PHP
+- Laravel
+- MySQL
+- Zend Framework
+- WordPress
+- JavaScript
+- jQuery
+- HTML/CSS
+- REST API
+- Git & GitHub
+
+## GitHub Repository
+
+This repository is part of my Laravel development portfolio and demonstrates practical project implementation using Laravel and related web technologies.
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+This project is for portfolio and demonstration purposes.
