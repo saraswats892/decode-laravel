@@ -173,6 +173,15 @@ Open the application in your browser:
 
 http://127.0.0.1:8000
 
+## Project Reference
+
+This project is a Laravel-based recreation of the DECODE Knowledge Project website for learning and portfolio demonstration.
+
+Original website:
+[DECODE Knowledge Project](https://unescochair-cbrsr.org/decode)
+
+The original website is not owned or hosted by me. This repository demonstrates my Laravel implementation based on the existing website structure and content.
+
 ## Project Purpose
 
 This project demonstrates practical experience in converting an existing PHP-based website into a structured Laravel application.
